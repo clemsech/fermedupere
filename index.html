@@ -5,11 +5,24 @@
     <title>La Ferme du Péré</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playwrite+CL:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dekko&family=Playwrite+CL:wght@100..400&display=swap');
+        body{
+            font-family: "Amatic SC", sans-serif;
+              font-style: normal;
+        }
+        p{
+              font-family: "Dekko", cursive;
+                font-weight: 400;
+                font-size: 20px;
+                font-style: normal;
+        }
+
         a:hover {
             font-size: 15pt;
             border: 15px;   
         }
-        body { font-family: Comic Sans MS, Comic Sans, cursive; margin: 0; padding: 0; background: #E7F0DC; }
+        body { margin: 0; padding: 0; background: #E7F0DC; }
         header { background: #597445; color: white; padding: 10px 0; text-align: center; }
         nav { display: flex; justify-content: center; background: #658147; }
         nav a { margin: 10px; color: white; text-decoration: none; }
@@ -45,15 +58,21 @@
 </head>
 <body>
     <header>
-        <img src="407393985_316067727894059_8642398921001209024_n-2.jpg" style="width: 10%; padding: 10px;" class="rounded-circle float-start" alt="logo de la ferme du péré">
+        
         <div>
-            <h1>La Ferme du Péré</h1>
+            <div>
+            <img src="407393985_316067727894059_8642398921001209024_n-2.jpg" style="width: 8%; " class="rounded-circle float-start m-2" alt="logo de la ferme du péré">
+            </div>
+            <div class="justify-content-center">
+            <h1 class="text-center">La Ferme du Péré</h1>
+            </div>
             <div class="container navbar navbar-expand-lg navbar-dark" style="width: 700px">
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse text-center" style="justify-content: center;" id="navbarNav">
-                    <ul class="navbar-nav ml-auto text-center">
+                <div class="collapse navbar-collapse text-center justify-content-center" style="justify-content: center;" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item m-2"><a class="nav-link border rounded" href="#accueil">Accueil</a></li>
                         <li class="nav-item m-2"><a class="nav-link border rounded" href="#apropos">À Propos</a></li>
                         <li class="nav-item m-2"><a class="nav-link border rounded" href="#produits">Nos Produits</a></li>
@@ -63,7 +82,8 @@
                             </a></li>
                     </ul>
                 </div>
-            </div>
+            
+        </div>
         </div>
     </header>
     <section id="accueil" class="container my-4">
@@ -135,15 +155,15 @@
             <h2 class="text-center mb-4  border border-black rounded border-3 p-2" style="width: 170px;">Contact</h2>
         </div>
         <p>Pour toute question ou visite de la ferme, contactez-nous :</p>
-        <div class="row"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Building-Cottage--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Building Cottage Streamline Icon: https://streamlinehq.com</desc><path d="M1.3275 21.1725H21.1725" stroke-width="1.5"></path><path d="M2.43 21.1725V9.045L5.18625 4.08375L11.25 1.3275L17.31375 4.08375L20.07 9.045V21.1725" stroke-width="1.5"></path><path d="M9.045 7.9425C9.045 9.6399375 10.8825 10.7008125 12.352500000000001 9.85209375C13.03471875 9.45815625 13.455 8.73028125 13.455 7.9425C13.455 6.2450625 11.6175 5.1841875 10.147499999999999 6.03290625C9.46528125 6.42684375 9.045 7.154718750000001 9.045 7.9425" stroke-width="1.5"></path><path d="M7.9425 21.1725V15.66C7.9425 15.051093750000001 8.43609375 14.557500000000001 9.045 14.557500000000001H13.455C14.06390625 14.557500000000001 14.557500000000001 15.051093750000001 14.557500000000001 15.66V21.1725" stroke-width="1.5"></path></svg><p style="width: 824px"><strong>Adresse</strong> : chemin du Péré, 32800 Réans - Gers</p></div>
+        <div class="row"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Building-Cottage--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Building Cottage Streamline Icon: https://streamlinehq.com</desc><path d="M1.3275 21.1725H21.1725" stroke-width="1.5"></path><path d="M2.43 21.1725V9.045L5.18625 4.08375L11.25 1.3275L17.31375 4.08375L20.07 9.045V21.1725" stroke-width="1.5"></path><path d="M9.045 7.9425C9.045 9.6399375 10.8825 10.7008125 12.352500000000001 9.85209375C13.03471875 9.45815625 13.455 8.73028125 13.455 7.9425C13.455 6.2450625 11.6175 5.1841875 10.147499999999999 6.03290625C9.46528125 6.42684375 9.045 7.154718750000001 9.045 7.9425" stroke-width="1.5"></path><path d="M7.9425 21.1725V15.66C7.9425 15.051093750000001 8.43609375 14.557500000000001 9.045 14.557500000000001H13.455C14.06390625 14.557500000000001 14.557500000000001 15.051093750000001 14.557500000000001 15.66V21.1725" stroke-width="1.5"></path></svg><p style="width: 424px"><strong>Adresse</strong> : chemin du Péré, 32800 Réans - Gers</p></div>
         <div class="row">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Phone--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Phone Streamline Icon: https://streamlinehq.com</desc><path d="M2.4710625 0.9236875H5.5658125L7.1131875 4.7921249999999995L5.1789375 5.952625C6.0075 7.6326875 7.3673125 8.9924375 9.047374999999999 9.8210625L10.207875 7.8868125L14.076312499999998 9.4341875V12.5289375C14.076312499999998 13.3835625 13.3835625 14.076312499999998 12.5289375 14.076312499999998C6.2835 13.69675 1.30325 8.7165 0.9236875 2.4710625C0.9236875 1.6164375 1.6164375 0.9236875 2.4710625 0.9236875" stroke-width="1"></path></svg><p style="width: 824px"><strong>Téléphone</strong> :  <a style="vertical-align: middle;" href="tel:06713022">06 71 30 76 22</a></p></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Phone--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Phone Streamline Icon: https://streamlinehq.com</desc><path d="M2.4710625 0.9236875H5.5658125L7.1131875 4.7921249999999995L5.1789375 5.952625C6.0075 7.6326875 7.3673125 8.9924375 9.047374999999999 9.8210625L10.207875 7.8868125L14.076312499999998 9.4341875V12.5289375C14.076312499999998 13.3835625 13.3835625 14.076312499999998 12.5289375 14.076312499999998C6.2835 13.69675 1.30325 8.7165 0.9236875 2.4710625C0.9236875 1.6164375 1.6164375 0.9236875 2.4710625 0.9236875" stroke-width="1"></path></svg><p style="width: 424px"><strong>Téléphone</strong> :  <a style="vertical-align: middle;" href="tel:06713022">06 71 30 76 22</a></p></div>
         <div class="row">
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Mail--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Mail Streamline Icon: https://streamlinehq.com</desc><path d="M1.3275 5.7375C1.3275 4.5196875 2.3146875 3.5324999999999998 3.5324999999999998 3.5324999999999998H18.9675C20.1853125 3.5324999999999998 21.1725 4.5196875 21.1725 5.7375V16.7625C21.1725 17.98021875 20.18521875 18.96740625 18.9675 18.9675H3.5324999999999998C2.3146875 18.96759375 1.3275 17.9803125 1.3275 16.7625V5.7375Z" stroke-width="1.5"></path><path d="M1.3275 5.7375L11.25 12.352500000000001L21.1725 5.7375" stroke-width="1.5"></path></svg><p style="width: 824px"><strong>Email</strong> :  <a style="vertical-align: middle;" href="mailto:fermedupere@gmail.com">fermedupere@gmail.com</a></p>
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Mail--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Mail Streamline Icon: https://streamlinehq.com</desc><path d="M1.3275 5.7375C1.3275 4.5196875 2.3146875 3.5324999999999998 3.5324999999999998 3.5324999999999998H18.9675C20.1853125 3.5324999999999998 21.1725 4.5196875 21.1725 5.7375V16.7625C21.1725 17.98021875 20.18521875 18.96740625 18.9675 18.9675H3.5324999999999998C2.3146875 18.96759375 1.3275 17.9803125 1.3275 16.7625V5.7375Z" stroke-width="1.5"></path><path d="M1.3275 5.7375L11.25 12.352500000000001L21.1725 5.7375" stroke-width="1.5"></path></svg><p style="width: 424px"><strong>Email</strong> :  <a style="vertical-align: middle;" href="mailto:fermedupere@gmail.com">fermedupere@gmail.com</a></p>
         </div>
         <div class="row">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" id="Brand-Instagram--Streamline-Tabler" height="24" width="24" style="width: 48px;"><desc>Brand Instagram Streamline Icon: https://streamlinehq.com</desc><path d="M1.4500312499999999 6.3499687499999995C1.4500312499999999 3.64378125 3.64378125 1.4500312499999999 6.3499687499999995 1.4500312499999999H16.15003125C18.85621875 1.4500312499999999 21.049968749999998 3.64378125 21.049968749999998 6.3499687499999995V16.15003125C21.049968749999998 18.856125 18.856125 21.049875 16.15003125 21.049968749999998H6.3499687499999995C3.6436875 21.050156249999997 1.4500312499999999 18.856312499999998 1.4500312499999999 16.15003125Z" stroke-width="1.5"></path><path d="M7.575 11.25C7.575 14.079 10.63753125 15.847125 13.0875 14.432625C14.22459375 13.776187499999999 14.925 12.56296875 14.925 11.25C14.925 8.421 11.86246875 6.652875 9.4125 8.067375C8.27540625 8.723812500000001 7.575 9.93703125 7.575 11.25" stroke-width="1.5"></path><path d="M16.7625 5.7375V5.74978125" stroke-width="1.5"></path></svg>
-        <p style="width: 824px"><strong>instagrame</strong> : <a style="vertical-align: middle;" href="https://www.instagram.com/lafermedupere?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">lafermedupere</a></p>
+        <p style="width: 424px"><strong>instagrame</strong> : <a style="vertical-align: middle;" href="https://www.instagram.com/lafermedupere?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">lafermedupere</a></p>
         </div>
     </section>
     <footer>

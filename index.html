@@ -54,6 +54,36 @@
         .diapo {
             width: 100%;
         }
+        @media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+    
+    .navbar-collapse {
+        display: none !important;
+    }
+}
+
+/* Afficher la navigation pour les petits écrans */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: block !important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
     </style>
 </head>
 <body>
@@ -84,6 +114,24 @@
                 </div>
             
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <div class="collapse navbar-collapse text-center justify-content-center" style="justify-content: center;" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item m-2"><a class="nav-link border rounded" href="#accueil">Accueil</a></li>
+                        <li class="nav-item m-2"><a class="nav-link border rounded" href="#apropos">À Propos</a></li>
+                        <li class="nav-item m-2"><a class="nav-link border rounded" href="#produits">Nos Produits</a></li>
+                        <li class="nav-item m-2"><a class="nav-link border rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item m-2"><a style="vertical-align: middle;" href="mailto:fermedupere@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" id="Mail--Streamline-Tabler" height="24" width="24"><desc style="vertical-align: middle;">Mail Streamline Icon: https://streamlinehq.com</desc><path d="M1.3275 5.7375C1.3275 4.5196875 2.3146875 3.5324999999999998 3.5324999999999998 3.5324999999999998H18.9675C20.1853125 3.5324999999999998 21.1725 4.5196875 21.1725 5.7375V16.7625C21.1725 17.98021875 20.18521875 18.96740625 18.9675 18.9675H3.5324999999999998C2.3146875 18.96759375 1.3275 17.9803125 1.3275 16.7625V5.7375Z" stroke-width="1.5"></path><path d="M1.3275 5.7375L11.25 12.352500000000001L21.1725 5.7375" stroke-width="1.5"></path></svg></a></li>
+                        <li class="nav-item m-2"><a style="vertical-align: middle;" target="_blank" href="https://www.instagram.com/lafermedupere?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.75 -0.75 24 24" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" id="Brand-Instagram--Streamline-Tabler" height="24" width="24"><desc>Brand Instagram Streamline Icon: https://streamlinehq.com</desc><path d="M1.4500312499999999 6.3499687499999995C1.4500312499999999 3.64378125 3.64378125 1.4500312499999999 6.3499687499999995 1.4500312499999999H16.15003125C18.85621875 1.4500312499999999 21.049968749999998 3.64378125 21.049968749999998 6.3499687499999995V16.15003125C21.049968749999998 18.856125 18.856125 21.049875 16.15003125 21.049968749999998H6.3499687499999995C3.6436875 21.050156249999997 1.4500312499999999 18.856312499999998 1.4500312499999999 16.15003125Z" stroke-width="1.5"></path><path d="M7.575 11.25C7.575 14.079 10.63753125 15.847125 13.0875 14.432625C14.22459375 13.776187499999999 14.925 12.56296875 14.925 11.25C14.925 8.421 11.86246875 6.652875 9.4125 8.067375C8.27540625 8.723812500000001 7.575 9.93703125 7.575 11.25" stroke-width="1.5"></path><path d="M16.7625 5.7375V5.74978125" stroke-width="1.5"></path></svg>
+                            </a></li>
+                    </ul>
+                </div>
+    </ul>
+</div>
         </div>
     </header>
     <section id="accueil" class="container my-4">

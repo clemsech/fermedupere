@@ -47,22 +47,17 @@
         .diapo {
             width: 100%;
         }
-        @media (min-width: 768px) {
-    .navbar-toggler {
-        display: none;
-    }
-    
-    .navbar-collapse {
-        display: none !important;
-    }
-}
-/* Afficher la navigation pour les petits écrans */
-@media (max-width: 767px) {
-    .navbar-toggler {
-        display: block;
+  .navbar-toggle{
+        display:none;
     }
 
-    .navbar-collapse {
+/* Afficher la navigation pour les petits écrans */
+@media (max-width: 767px) {
+    .navbar-toggle{
+        display:block;
+    }
+
+    .navbar-collaps {
        display: none;
     }
 
@@ -75,14 +70,12 @@
     .navbar-nav .nav-item {
         margin-bottom: 10px;
     }
+    
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 
 * {
   box-sizing: border-box;
@@ -208,7 +201,6 @@ a {
   position: absolute;
   background: #E7F0DC;
   z-index: 100;
-  transition: 0.5s padding, 0.5s background;
      display: none; /* Ne pas afficher le menu par défaut */
     list-style-type: none; /* Retirer les puces de la liste */
     padding: 0; /* Retirer le padding de la liste */
@@ -218,14 +210,10 @@ a {
   content: "";
   display: block;
   height: 0;
-  border-top: 5px solid #ebebeb;
-  border-left: 75px solid transparent; /* ($menu_WIDTH / 2) à la place de la variable */
-  border-right: 75px solid transparent; /* ($menu_WIDTH / 2) à la place de la variable */
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 101;
-  transition: 0.5s border-top;
 }
 
 .menu:not(:hover) > .menu-dropdown {
@@ -234,6 +222,9 @@ a {
   z-index: 99;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 
 .menu-dropdown > * {
@@ -282,10 +273,8 @@ a {
     position: absolute; /* Positionné absolument pour apparaître sous le bouton */
     top: 100%; /* Aligne le menu directement sous le bouton */
     left: 0;
-    background-color: white; /* Couleur de fond du menu */
     z-index: 1000; /* Au-dessus des autres éléments */
     min-width: 220px; /* Assurez-vous que le menu est suffisamment large pour le texte */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Ombre pour un effet flottant */
     padding: 10px 0; /* Espacement interne pour le menu */
 }
 
@@ -311,4 +300,16 @@ a {
 
 .nav-link:hover {
     background-color: #E7F0DC; /* Change la couleur de fond au survol */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Cache le débordement horizontal */
+}
+
+.container {
+    max-width: 100%;
+    box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur totale */
 }

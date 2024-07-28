@@ -52,7 +52,7 @@
     }
 
 /* Afficher la navigation pour les petits écrans */
-@media (max-width: 767px) {
+@media (max-width: 950px) {
     .navbar-toggle{
         display:block;
     }

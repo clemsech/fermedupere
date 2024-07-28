@@ -4,7 +4,7 @@
             font-family: "Amatic SC", sans-serif;
               font-style: normal;
         }
-        p{
+        p {
               font-family: "Dekko", cursive;
                 font-weight: 400;
                 font-size: 20px;
@@ -50,13 +50,18 @@
   .navbar-toggle{
         display:none;
     }
+.jsp {
+        width: 549px;
+    }
 
 /* Afficher la navigation pour les petits écrans */
 @media (max-width: 950px) {
     .navbar-toggle{
         display:block;
     }
-
+    .jsp {
+        width: 90%;
+    }
     .navbar-collaps {
        display: none;
     }
